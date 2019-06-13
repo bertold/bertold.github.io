@@ -4,8 +4,8 @@ function main()
     console.log("ajax request to the resource which will require cors enabled");
     $.ajax
     ({
-        dataType: "html",
-        url: "http://google.com",
+        dataType: "json",
+        url: "https://us-central1-mabl-dev.cloudfunctions.net/corsTestStrictOrigin",
         success: function(data) 
         {
             console.log("log response on success");

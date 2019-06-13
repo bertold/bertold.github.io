@@ -5,7 +5,7 @@ function main()
     $.ajax
     ({
         dataType: "json",
-        url: "https://api.github.com",
+        url: "https://us-central1-mabl-dev.cloudfunctions.net/corsTestAnyOrigin",
         success: function(data) 
         {
             console.log("log response on success");
