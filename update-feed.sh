@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 STREAM_URL="https://www.klubradio.hu/data/hanganyagok/"$(date +%Y/%-m/%-d)"/archivum_alenyeg18_"$(date +%y%m%d)".mp3"
 UUID=$(uuidgen)
@@ -16,3 +16,5 @@ cat <<EOF > /tmp/update.json
 EOF
 
 mv /tmp/update.json ./klubradio.json
+
+cat klubradio.json
